@@ -1,0 +1,145 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+}
+
+/* Parte da navegação*/
+.nav-menu {
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  list-style-type: none;
+  gap: 110px;
+  margin-left: 650px;
+  margin-top: 55px;
+}
+
+.nav-menu .menu a {
+  position: relative;
+  color: grey;
+  text-decoration: none; 
+  transition: all 0.3s ease;
+}
+
+.nav-menu .menu a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+
+.button {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 50px 50px 50px 50px;
+  position: relative;
+  background-color: #00FF08;
+  color:black;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  font-size: 19px;
+  left: 1600px;
+  max-width: 100%;
+  width: 150px;
+  bottom: 37px;
+}
+
+.button a {
+  text-decoration: none;
+  background-color: #00FF08;
+  color:black;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/*Parte do main*/
+h1{
+  color:white;
+  margin-top: 280px;
+  margin-left: 120px;
+  margin-right: 1000px;
+  font-size: 50px;
+  line-height: 1.0;
+}
+
+h2 {
+  color: #e0e0e0;
+  margin-top: 50px;
+  margin-right: 1000px;
+  margin-left: 120px;
+  font-size: 17px;
+}
+
+.container-button {
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 80px 80px 80px 80px;
+  position: relative;
+  background-color: #00FF08;
+  color:black;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  font-size: 19px;
+  left: 120px;
+  max-width: 100%;
+  width: 220px;
+  margin-top: 60px;
+}
+
+.container-button  a {
+  text-decoration: none;
+  background-color: #00FF08;
+  color:black;
+}
+
+.container-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.container-imagem {
+  position: relative;
+  display: flex;
+  height: 470px; 
+  width: 470px;
+  padding: 10px;
+  border-radius: 100px / 100px;
+  overflow: hidden;
+  box-sizing: border-box;
+  left: 1150px;
+  bottom: 400px;
+}
+
+
+.container-imagem img {
+  width: 420px;
+  height: auto;
+  border-radius: 60%;
+  margin: 20px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
