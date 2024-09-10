@@ -6,7 +6,8 @@
   background-color: #000;
 }
 
-/* Parte da navegação*/
+/*COMEÇO DA NAV*/
+
 .nav-menu {
   text-align: center;
   display: flex;
@@ -57,22 +58,27 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+/*FIM DA NAV*/
 
-/*Parte do main*/
-h1{
-  color:white;
-  margin-top: 280px;
-  margin-left: 120px;
-  margin-right: 1000px;
+
+
+
+/*COMEÇO DO MAIN*/
+
+h1 {
+  width: auto;
+  max-width: 750px;
+  margin: 250px 0 0 90px;
+  color: white;
   font-size: 50px;
   line-height: 1.0;
 }
 
 h2 {
+  width: auto;
+  max-width: 700px;
   color: #e0e0e0;
-  margin-top: 50px;
-  margin-right: 1000px;
-  margin-left: 120px;
+  margin: 45px 0 0 90px;
   font-size: 17px;
 }
 
@@ -86,7 +92,7 @@ h2 {
   font-weight: bold;
   transition: transform 0.3s ease;
   font-size: 19px;
-  left: 120px;
+  left: 90px;
   max-width: 100%;
   width: 220px;
   margin-top: 60px;
@@ -106,19 +112,19 @@ h2 {
 .container-imagem {
   position: relative;
   display: flex;
-  height: 470px; 
-  width: 470px;
+  height: 450px; 
+  width: 450px;
   padding: 10px;
   border-radius: 100px / 100px;
   overflow: hidden;
   box-sizing: border-box;
-  left: 1150px;
+  left: 1200px;
   bottom: 400px;
 }
 
 
 .container-imagem img {
-  width: 420px;
+  width: 400px;
   height: auto;
   border-radius: 60%;
   margin: 20px 0;
@@ -136,6 +142,123 @@ h2 {
     transform: translateY(0);
   }
 }
+
+/*FIM DO MAIN*/
+
+
+
+
+/*COMEÇO DO STACK*/
+
+.container-stack #stack {
+  position: relative; 
+  left: 30vw; 
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-stack #de{
+  position: relative;
+  left: 40vw;
+  bottom: 2.5vw;
+  margin: 0;  
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-stack #dev-green {
+  color: #00FF08;
+  position: relative;
+  left: 45vw;
+  bottom: 5.0vw;
+  margin: 0; 
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-stack {
+  margin-top: -200px;
+}
+
+/*FIM DO STACK*/
+
+
+
+
+/*COMEÇO DOS CONTAINERS DE DESENVOLVIMENTO*/
+
+.container-conteudo {
+  display: flex;
+  gap: 70px;
+  padding: 20px;
+}
+
+.container-csharp, .container-sql, .container-git, .container-vue {
+  flex: 1;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 25px;
+  transition: .2s;
+}
+
+.container-csharp:hover, .container-sql:hover, .container-git:hover, .container-vue:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffffff9a;
+}
+
+.container-csharp img {
+  width: 100%;
+  width: 220px;
+  display: block;
+  margin-left: 80px;
+  padding-top: 10px;
+}
+
+
+.container-sql img {
+  width: 100%;
+  width: 260px;
+  display: block;
+  margin-left: 55px;
+  margin-top: 40px;
+}
+
+.container-git img {
+  width: 100%;
+  width: 230px;
+  display: block;
+  margin-left: 70px;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.container-vue img {
+  width: 100%;
+  width: 350px;
+  display: block;
+  margin-left: 20px;
+  margin-top: 80px;
+  padding-bottom: 50px;
+}
+
+.container-csharp p, .container-sql p, .container-git p, .container-vue {
+  color: #fff;
+  width: 100%; 
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/*FIM DOS CONTAINERS DE DESENVOLVIMENTO*/
+
+
+
 
 
 
