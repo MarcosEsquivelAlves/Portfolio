@@ -7,6 +7,9 @@
 }
 
 /*COMEÇO DA NAV*/
+html {
+  scroll-behavior: smooth;
+}
 
 .nav-menu {
   text-align: center;
@@ -30,7 +33,6 @@
   color: #fff;
   transform: scale(1.05);
 }
-
 
 .button {
   text-align: center;
@@ -64,7 +66,6 @@
 
 
 /*COMEÇO DO MAIN*/
-
 h1 {
   width: auto;
   max-width: 750px;
@@ -122,7 +123,6 @@ h2 {
   bottom: 400px;
 }
 
-
 .container-imagem img {
   width: 400px;
   height: auto;
@@ -142,7 +142,6 @@ h2 {
     transform: translateY(0);
   }
 }
-
 /*FIM DO MAIN*/
 
 
@@ -172,14 +171,12 @@ h2 {
 .container-stack {
   margin-top: -200px;
 }
-
 /*FIM DO STACK*/
 
 
 
 
 /*COMEÇO DOS CONTAINERS DE DESENVOLVIMENTO*/
-
 .container-conteudo {
   display: flex;
   gap: 70px;
@@ -209,7 +206,6 @@ h2 {
   margin-left: 80px;
   padding-top: 10px;
 }
-
 
 .container-sql img {
   width: 100%;
@@ -245,13 +241,11 @@ h2 {
   box-sizing: border-box;
   text-align: center;
 }
-
 /*FIM DOS CONTAINERS DE DESENVOLVIMENTO*/
 
 
 
-/*COMECO DO SOBRE MIM*/
-
+/*COMEÇO DO SOBRE MIM*/
 section.sobre {
   margin-top: 250px;
   padding: 40px;
@@ -310,20 +304,166 @@ margin-bottom: 80px;
 .btn-social img:hover {
   transform: scale(1.1);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FIM DO SOBRE MIM*/
+
+
+
+
+/*COMEÇO DO FORMS*/
+.formulario .interface{
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.formulario .titulo {
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  left: 22vw; 
+  margin-bottom: 60px;
+}
+
+.formulario .interface  span {
+  color:#00FF08;
+  margin-left: 10px;
+}
+
+section.formulario {
+  margin: 0;
+  padding: 30px 4%;
+  position: relative;
+}
+
+form {
+  max-width: 500px;
+  border-radius: 30px;
+  background: rgba(34, 34, 34, 0.986);
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+  border: 1px solid rgba(34, 34, 34, 0.986);
+}
+
+form input,
+textarea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  background-color: rgba(0, 0, 0, 0.863);
+  border-radius: 15px;
+  color: #fff;
+  font-size: 18px;
+}
+
+textarea {
+  resize: none;
+  max-height: 200px;
+
+}
+
+form .btn-enviar {
+  margin-top: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0);
+}
+
+.btn-enviar input {
+  width: 120px;
+  background: #00ff08;
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.btn-enviar input:hover{
+  transform: scale(1.1);
+}
+/*FIM DO FORMS*/
+
+
+
+
+
+
+
+/*COMEÇO DO RODAPÉ*/
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 70px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  text-align: center; 
+  position: relative; 
+  z-index: 10;
+}
+
+.footer-content {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+footer .container-footer p {
+  margin: 0; 
+  position: relative;
+  top: 50px;
+}
+
+.container-email {
+  padding: 5px;
+  display: flex;
+  position: relative;
+  bottom: 30px;
+}
+
+.container-email a{
+  color: white;
+  text-decoration: none;
+}
+
+.container-email img{
+  position: relative;
+  width: 45px;
+  top: 9px;
+}
+
+.footer-back-to-top {
+  margin-top: 20px;
+  margin: 0;
+  position: relative;
+  bottom: 30px;
+}
+
+.footer-back-to-top a {
+  color:#00FF08;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-content span{
+  color:#00FF08;
+}
+/*FIM DO RODAPÉ*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
