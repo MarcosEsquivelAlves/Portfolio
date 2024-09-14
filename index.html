@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="style.css">
   <title>Meu Portfólio</title>
 </head>
+
+
 <body>
   <header>
-    <!--PARTE DA NAVEGAÇÃO-->
+    <!--COMEÇO DA NAVEGAÇÃO-->
     <nav>
       <div>
         <ul class="nav-menu">
@@ -21,10 +23,10 @@
           <li class="menu"><a href="#stack">Stacks</a></li>
           <li class="menu"><a href="#sobre">Sobre</a></li>
           <li class="menu"><a href="https://github.com/MarcosEsquivelAlves?tab=repositories" target="_blank">Projetos</a></li>
+          <div class="button">
+            <a href="#contato">Contato</a>
+          </div>
         </ul>
-        <div class="button">
-          <a href="https://wa.me/5519981263730" target="_blank">Contato</a>
-        </div>
       </div>
     </nav>
   </header>
@@ -32,36 +34,32 @@
 
 
 
-  <!--PARTE DA MAIN-->
-  <divclass="container-main">
-    <div class="container-h1">
-      <h1>
-        TRANSFORMANDO IDEIAS EM <br>REALIDADE DIGITAL.
-      </h1>
+  <!--COMEÇO DA MAIN-->
+  <div class="container-main">
+    <div class="flex">
+        <div class="text-container">
+            <h1>TRANSFORMANDO IDEIAS EM <br>REALIDADE DIGITAL.</h1>
+            <h2>Criatividade e inovação lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</h2>
+            <div class="container-button">
+                <a href="https://wa.me/5519981263730" target="_blank">Entre em contato</a>
+            </div>
+        </div>
+        <div class="container-imagem">
+            <img src="../Portfolio/imagens/fotoperfil.png" alt="Minha Imagem">
+        </div>
     </div>
-    <div class="container-h2">
-      <h2>Criatividade e inovação lado a lado. Com uma combinação única de design<br>impactante, funcionalidade intuitiva e otimização para resultados, estou pronto<br>para criar a presença online dos seus sonhos.</h2>
-    </div>
-    <div class="container-button">
-      <a href="https://wa.me/5519981263730" target="_blank">Entre em contato</a>
-    </div>
-    <div class="container-imagem">
-      <img src="../Portfolio/imagens/fotoperfil.png" alt="Minha Imagem">
-    </div>
-  </div>
+</div>
+
   <!--FIM DA MAIN-->
 
 
 
-  <!--PARTE DO STACK-->
+  <!--COMEÇO DO STACK-->
   <div id="stack" class="container-stack">
     <h1 id="stack">
-      STACK DE
+      STACK DE <span>DESENVOLVIMENTO.</span> 
     </h1>
-    <h1 id="dev-green">
-      DESENVOLVIMENTO.
-    </h1>
-    <!--PARTE DOS CARDS-->
+    <!--COMEÇO DOS CARDS-->
     <div class="container-conteudo">
       <div class="container-csharp">
         <img src="../Portfolio/imagens/csharp.png" alt="Imagem Csharp">
@@ -85,7 +83,7 @@
 
 
 
-  <!--PARTE DO SOBRE MIM-->
+  <!--COMEÇO DO SOBRE MIM-->
   <section id="sobre" class="sobre">
     <div class="interface">
       <div class="flex">
@@ -124,7 +122,7 @@
 
 
   <!--COMEÇO DO FORMS-->
-  <section class="formulario">
+  <section id="contato" class="formulario">
     <div class="interface">
       <div class="container-titulo">
         <h2 class="titulo">FALE <span>COMIGO.</span></h2>

@@ -14,16 +14,15 @@ html {
 .nav-menu {
   text-align: center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   font-size: 16px;
   list-style-type: none;
-  gap: 110px;
-  margin-left: 650px;
+  gap: 6vw;
   margin-top: 55px;
+  margin-left: 100px;
 }
 
 .nav-menu .menu a {
-  position: relative;
   color: grey;
   text-decoration: none; 
   transition: all 0.3s ease;
@@ -44,10 +43,9 @@ html {
   font-weight: bold;
   transition: transform 0.3s ease;
   font-size: 19px;
-  left: 1600px;
-  max-width: 100%;
+  bottom: 10px;
+  left: 250px;
   width: 150px;
-  bottom: 37px;
 }
 
 .button a {
@@ -64,45 +62,54 @@ html {
 
 
 
-
 /*COMEÇO DO MAIN*/
-h1 {
-  width: auto;
-  max-width: 750px;
-  margin: 250px 0 0 100px;
-  color: white;
-  font-size: 50px;
-  line-height: 1.0;
+.container-main .flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 80px 0;
+  margin: 140px 0;
 }
 
-h2 {
-  width: auto;
-  max-width: 700px;
-  color: #e0e0e0;
-  margin: 45px 0 0 100px;
-  font-size: 17px;
+.text-container {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 150px;
+}
+
+.container-main h1 {
+  font-size: 49px;
+  color: white;
+  line-height: 46px;
+  margin: 0;
+}
+
+.container-main h2 {
+  font-size: 18px;
+  color: rgb(216, 216, 216);
+  margin: 30px 0;
 }
 
 .container-button {
   text-align: center;
   padding: 10px 20px;
-  border-radius: 80px 80px 80px 80px;
-  position: relative;
+  border-radius: 80px;
   background-color: #00FF08;
-  color:black;
+  color: black;
   font-weight: bold;
   transition: transform 0.3s ease;
   font-size: 19px;
-  left: 100px;
-  max-width: 100%;
-  width: 220px;
-  margin-top: 60px;
+  max-width: 220px;
 }
 
-.container-button  a {
+.container-button a {
   text-decoration: none;
-  background-color: #00FF08;
-  color:black;
+  color: black;
+  background-color: #00ff08;
 }
 
 .container-button:hover {
@@ -111,23 +118,22 @@ h2 {
 }
 
 .container-imagem {
-  position: relative;
+  margin-right: 250px;
   display: flex;
-  height: 450px; 
-  width: 450px;
-  padding: 10px;
-  border-radius: 100px / 100px;
-  overflow: hidden;
-  box-sizing: border-box;
-  left: 1200px;
-  bottom: 400px;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+  border-radius: 100%;  
 }
 
 .container-imagem img {
-  width: 400px;
-  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   border-radius: 60%;
-  margin: 20px 0;
+  margin: 0;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -146,33 +152,26 @@ h2 {
 
 
 
-
 /*COMEÇO DO STACK*/
-
-.container-stack #stack {
-  position: relative; 
-  left: 32.6vw; 
-  margin: 0;
-  justify-content: center;
-  align-items: center;
+.container-stack{
+  margin: 180px 0 0 0;
 }
 
-.container-stack #dev-green {
+#stack h1#stack {
+  display: flex; 
+  font-size: 42px;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  line-height: 1.0;
+}
+
+#stack h1 span {
   color: #00FF08;
-  position: relative;
-  left: 46vw;
-  bottom: 2.6vw;
-  margin: 0; 
-  justify-content: center;
-  align-items: center;
-}
-
-
-.container-stack {
-  margin-top: -200px;
+  margin-left: 10px;
 }
 /*FIM DO STACK*/
-
 
 
 
@@ -182,6 +181,7 @@ h2 {
   gap: 70px;
   padding: 20px;
   margin-top: 140px;
+  flex-wrap: wrap;
 }
 
 .container-csharp, .container-sql, .container-git, .container-vue {
@@ -235,7 +235,7 @@ h2 {
 
 .container-csharp p, .container-sql p, .container-git p, .container-vue {
   color: #fff;
-  width: 100%; 
+  width: 100%;
   margin: 0;
   padding: 10px;
   box-sizing: border-box;
@@ -267,6 +267,7 @@ section.sobre .flex {
   font-size: 50px;
   line-height: 1.0;
   margin: 0 0 60px 100px;
+  color: white;
 }
 
 .sobre .txt-sobre h2 span {
@@ -278,6 +279,7 @@ section.sobre .flex {
   margin: 0 0 20px 100px;
   color: #fff;
 }
+
 .sobre .txt-sobre .container-p {
 margin-bottom: 80px;
 }
@@ -308,21 +310,20 @@ margin-bottom: 80px;
 
 
 
-
 /*COMEÇO DO FORMS*/
 .formulario .interface{
-  margin-top: 150px;
-  margin-bottom: 100px;
+  margin-top: 240px;
+  margin-bottom: 150px;
 }
 
-.formulario .titulo {
+.interface .container-titulo .titulo {
   position: relative;
   font-size: 40px;
   display: flex;
   justify-content: center;
   text-align: center;
-  left: 22vw; 
   margin-bottom: 60px;
+  color:white;
 }
 
 .formulario .interface  span {
@@ -390,10 +391,6 @@ form .btn-enviar {
 
 
 
-
-
-
-
 /*COMEÇO DO RODAPÉ*/
 footer {
   background-color: #000;
@@ -455,10 +452,179 @@ footer .container-footer p {
 
 
 
+@media screen and (min-width: 375px) and (max-width: 844px){
+  /*CABEÇALHO*/
+  .nav-menu, button{
+   display: none;
+  }
+  
+  /*CLASSES GERAIS*/
+  .flex{
+    flex-direction: column;
+  }
+
+
+  /*PARTE DA MAIN*/
+  .container-main .flex{
+    flex-direction: column-reverse;
+  }
+
+  .container-imagem {
+    margin: 0 490px 0 0;
+    height: 50vh;
+    width: 70vw;
+  }
+
+  .container-main h1 {
+    font-size: 25px;
+    position: relative;
+    right: 130px;
+    line-height: 27px;
+    bottom: 20px;
+  }
+
+  .container-main h2 {
+    width: 360px;
+    margin: 5px;
+    font-size: 16px;
+    position: relative;
+    right: 130px;
+    line-height: 19px;
+    bottom: 20px;
+  }
+
+  .container-button a {
+    position: relative;
+    left: 9px;
+  }
+
+  .container-button {
+    display: flex;
+    position: relative;
+    right: 60px;
+  }
+  /*FIM DA MAIN*/
 
 
 
+  /*COMEÇO DO STACK*/
+  .container-stack{
+    margin: 160px 0 0 0;
+  }
+  
+  #stack h1#stack {
+    font-size: 25px;
+    margin: 1px;
+  }
+  
+  #stack h1 span {
+    margin-left: 10px;
+  }
 
+  .container-conteudo {
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    gap: 50px;
+  }
+
+  .container-csharp img {
+    margin-left: 55px;
+  }
+  
+  .container-sql img {
+    margin-left: 33px;
+  }
+  
+  .container-git img {
+    margin-left: 55px;
+  }
+  
+  .container-vue img {
+    position: relative;
+    right: 30px;
+  }
+  /*FIM DO STACK*/
+
+
+
+  /*COMEÇO DO SOBRE MIM*/
+  section.sobre {
+    margin: 0;
+  }
+ 
+  .sobre .txt-sobre {
+    display: flex;
+    flex-direction: column;
+    margin: 0 90px 0 0;
+    position: relative;
+    top: -50px;
+  }
+
+  .img-sobre img {
+    position: relative;
+    right: 60px;
+    max-width: 100%;
+    width: 260px;
+    border-radius: 30px;
+  }
+  
+  .sobre .txt-sobre h2 {
+    font-size: 30px;
+    margin: 0 0 40px 100px;
+    color: white;
+  }
+  
+  .sobre .txt-sobre .container-p p {
+    position: relative;
+    top: -20px;
+    width: 340px;
+    margin: 0 0 20px 100px;
+  }
+
+  .btn-social{
+    display: flex;
+    position: relative;
+    left: 50px;
+  }
+  
+  .btn-social img {
+    width: 120px;
+    height: auto;
+    transition: .2s;
+  }
+  /*FIM DO SOBRE MIM*/
+ 
+
+
+  /*COMEÇO DO FORMS*/
+  .formulario .interface{
+    margin: 0 0 100px 0;
+  }
+
+  .interface .container-titulo .titulo{
+    font-size: 30px;
+  }
+  /*FIM DO FORMS*/
+
+
+
+  /*COMEÇO DO FOOTER*/
+  footer .container-footer p {
+    width: 270px;
+    margin: 0; 
+    position: relative;
+    top: 70px;
+  }
+  
+  .container-email {
+    padding: 5px;
+    display: flex;
+    position: relative;
+    bottom: 30px;
+  }
+  /*FIM DO FOOTER*/
+}
 
 
 
