@@ -452,7 +452,7 @@ footer .container-footer p {
 
 
 
-@media screen and (min-width: 375px) and (max-width: 844px){
+@media screen and (min-width: 360px) and (max-width: 430px){
   /*CABEÇALHO*/
   .nav-menu, button{
    display: none;
@@ -470,13 +470,13 @@ footer .container-footer p {
   }
 
   .container-imagem {
-    margin: 0 490px 0 0;
+    margin: 0 520px 0 0;
     height: 50vh;
     width: 70vw;
   }
 
   .container-main h1 {
-    font-size: 25px;
+    font-size: 23px;
     position: relative;
     right: 130px;
     line-height: 27px;
@@ -486,7 +486,7 @@ footer .container-footer p {
   .container-main h2 {
     width: 360px;
     margin: 5px;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
     right: 130px;
     line-height: 19px;
@@ -495,13 +495,13 @@ footer .container-footer p {
 
   .container-button a {
     position: relative;
-    left: 9px;
+    left: 6px;
   }
 
   .container-button {
     display: flex;
     position: relative;
-    right: 60px;
+    right: 80px;
   }
   /*FIM DA MAIN*/
 
@@ -513,7 +513,7 @@ footer .container-footer p {
   }
   
   #stack h1#stack {
-    font-size: 25px;
+    font-size: 22px;
     margin: 1px;
   }
   
@@ -529,18 +529,19 @@ footer .container-footer p {
   }
 
   .container-csharp img {
-    margin-left: 55px;
+    margin-left: 40px;
   }
   
   .container-sql img {
-    margin-left: 33px;
+    margin-left: 23px;
   }
   
   .container-git img {
-    margin-left: 55px;
+    margin-left: 37px;
   }
   
   .container-vue img {
+    width: 320px;
     position: relative;
     right: 30px;
   }
@@ -563,7 +564,7 @@ footer .container-footer p {
 
   .img-sobre img {
     position: relative;
-    right: 60px;
+    right: 80px;
     max-width: 100%;
     width: 260px;
     border-radius: 30px;
@@ -585,11 +586,11 @@ footer .container-footer p {
   .btn-social{
     display: flex;
     position: relative;
-    left: 50px;
+    left: 60px;
   }
   
   .btn-social img {
-    width: 120px;
+    width: 115px;
     height: auto;
     transition: .2s;
   }
@@ -614,7 +615,8 @@ footer .container-footer p {
     width: 270px;
     margin: 0; 
     position: relative;
-    top: 70px;
+    right: 20px;
+    top: 80px;
   }
   
   .container-email {
@@ -627,6 +629,360 @@ footer .container-footer p {
 }
 
 
+
+@media screen and (min-width: 410px) and (max-width: 896px) {
+
+   /*TAMANHO PARA IPHONES*/ 
+   
+  .nav-menu, button{
+    display: none;
+   }
+   
+   /*CLASSES GERAIS*/
+   .flex{
+     flex-direction: column;
+   }
+ 
+ 
+   /*PARTE DA MAIN*/
+   .container-main .flex{
+     flex-direction: column-reverse;
+   }
+ 
+   .container-imagem {
+     margin: 0 480px 0 0;
+     height: 50vh;
+     width: 70vw;
+   }
+ 
+   .container-main h1 {
+     font-size: 23px;
+     position: relative;
+     right: 110px;
+     line-height: 27px;
+     bottom: 20px;
+   }
+ 
+   .container-main h2 {
+     width: 360px;
+     margin: 5px;
+     font-size: 14px;
+     position: relative;
+     right: 110px;
+     line-height: 19px;
+     bottom: 20px;
+   }
+ 
+   .container-button a {
+     position: relative;
+     left: 7px;
+   }
+ 
+   .container-button {
+     display: flex;
+     position: relative;
+     right: 50px;
+   }
+   /*FIM DA MAIN*/
+
+     /*COMEÇO DO STACK*/
+  .container-stack{
+    margin: 160px 0 0 0;
+  }
+  
+  #stack h1#stack {
+    font-size: 22px;
+    margin: 1px;
+  }
+  
+  #stack h1 span {
+    margin-left: 10px;
+  }
+
+  .container-conteudo {
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    gap: 50px;
+  }
+
+  .container-csharp img {
+    margin-left: 60px;
+  }
+  
+  .container-sql img {
+    margin-left: 30px;
+  }
+  
+  .container-git img {
+    margin-left: 60px;
+  }
+  
+  .container-vue img {
+    width: 320px;
+    position: relative;
+    right: 5px;
+  }
+  /*FIM DO STACK*/
+
+
+
+  /*COMEÇO DO SOBRE MIM*/
+  section.sobre {
+    margin: 0;
+  }
+ 
+  .sobre .txt-sobre {
+    display: flex;
+    flex-direction: column;
+    margin: 0 90px 0 0;
+    position: relative;
+    top: -50px;
+  }
+
+  .img-sobre img {
+    position: relative;
+    right: 50px;
+    max-width: 100%;
+    width: 260px;
+    border-radius: 30px;
+  }
+  
+  .sobre .txt-sobre h2 {
+    font-size: 30px;
+    margin: 0 0 40px 100px;
+    color: white;
+  }
+  
+  .sobre .txt-sobre .container-p p {
+    position: relative;
+    top: -20px;
+    width: 340px;
+    margin: 0 0 20px 100px;
+  }
+
+  .btn-social{
+    display: flex;
+    position: relative;
+    left: 60px;
+  }
+  
+  .btn-social img {
+    width: 115px;
+    height: auto;
+    transition: .2s;
+  }
+  /*FIM DO SOBRE MIM*/
+ 
+
+
+  /*COMEÇO DO FORMS*/
+  .formulario .interface{
+    margin: 0 0 100px 0;
+  }
+
+  .interface .container-titulo .titulo{
+    font-size: 30px;
+  }
+  /*FIM DO FORMS*/
+
+
+
+  /*COMEÇO DO FOOTER*/
+  footer .container-footer p {
+    width: 270px;
+    margin: 0; 
+    position: relative;
+    left: 10px;
+    top: 80px;
+  }
+  
+  .container-email {
+    padding: 5px;
+    display: flex;
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+  }
+  /*FIM DO FOOTER*/
+
+
+  @media screen and (min-width: 750px) and (max-width: 885px){
+ /*TAMANHO TABLETS*/
+
+ .nav-menu, button{
+  display: flex;
+  font-size: 27px;
+  position: relative;
+  right: 100px;
+ }
+
+ .button {
+  position: relative;
+  font-size: 25px;
+  left: 150px;
+  width: 150px;
+}
+
+ .container-imagem {
+  margin: 0;
+  height: 45vh;
+  width: 55vw;
+}
+
+.container-main h1 {
+  font-size: 40px;
+  position: relative;
+  left: 10px;
+  line-height: 37px;
+}
+
+.container-main h2 {
+  width: 660px;
+  margin: 5px;
+  font-size: 25px;
+  position: relative;
+  left: 10px;
+  line-height: 24px;
+  bottom: 20px;
+}
+
+.container-button {
+  font-size: 27px;
+  max-width: 300px;
+  position: relative;
+  left: 140px;
+}
+
+/*FIM DA MAIN*/
+
+
+
+/*COMEÇO DO STACK*/
+.container-stack{
+ margin: 160px 0 0 0;
+}
+
+#stack h1#stack {
+ font-size: 37px;
+ margin: 1px;
+}
+
+.container-conteudo {
+ position: relative;
+ bottom: 80px;
+ display: flex;
+ gap: 50px;
+}
+
+.container-csharp img {
+ margin-left: 80px;
+}
+
+.container-sql img {
+ margin-left: 50px;
+}
+
+.container-git img {
+ margin-left: 80px;
+}
+
+.container-vue img {
+ width: 330px;
+ position: relative;
+ left: 10px;
+}
+
+.container-csharp, .container-sql, .container-git, .container-vue {
+  position: relative;
+  left: 32px;
+}
+/*FIM DO STACK*/
+
+
+
+/*COMEÇO DO SOBRE MIM*/
+section.sobre {
+ margin: 0;
+}
+
+.sobre .txt-sobre {
+ display: flex;
+ flex-direction: column;
+ margin: 0 60px 0 0;
+ position: relative;
+ top: -50px;
+}
+
+.img-sobre img {
+ position: relative;
+ right: 50px;
+ max-width: 100%;
+ width: 400px;
+ border-radius: 30px;
+}
+
+.sobre .txt-sobre h2 {
+ font-size: 50px;
+ margin: 0 0 40px 190px;
+ color: white;
+}
+
+.sobre .txt-sobre .container-p p {
+ position: relative;
+ font-size: 25px;
+ top: -20px;
+ width: 700px;
+ margin: 0 0 20px 100px;
+}
+
+.btn-social{
+ display: flex;
+ position: relative;
+ left: 90px;
+}
+
+.btn-social img {
+ width: 210px;
+ height: auto;
+ transition: .2s;
+}
+/*FIM DO SOBRE MIM*/
+
+
+
+/*COMEÇO DO FORMS*/
+.formulario .interface{
+ margin: 0 0 100px 0;
+}
+
+.interface .container-titulo .titulo{
+ font-size: 40px;
+}
+/*FIM DO FORMS*/
+
+
+
+/*COMEÇO DO FOOTER*/
+footer .container-footer p {
+ width: 300px;
+ margin: 0; 
+ position: relative;
+ left: 150px;
+ top: 80px;
+}
+
+.container-email {
+ padding: 5px;
+ display: flex;
+ position: relative;
+ bottom: 30px;
+ left: 290px;
+}
+/*FIM DO FOOTER*/
+}
+
+}
 
 
 
