@@ -1,148 +1,246 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--GOOGLE FONTS-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,600;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
-  <!--FIM GOOGLE FONTS-->
-  <link rel="stylesheet" href="style.css">
-  <title>Meu Portfólio</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;0,600;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--FIM GOOGLE FONTS-->
+    <link rel="stylesheet" href="style.css" />
 
-<body>
-  <header>
-    <!--COMEÇO DA NAVEGAÇÃO-->
-    <nav>
-      <div>
-        <ul class="nav-menu">
-          <li class="menu"><a href="#top">Início</a></li>
-          <li class="menu"><a href="#stack">Stacks</a></li>
-          <li class="menu"><a href="#sobre">Sobre</a></li>
-          <li class="menu"><a href="https://github.com/MarcosEsquivelAlves?tab=repositories" target="_blank">Projetos</a></li>
-          <div class="button">
-            <a href="#contato">Contato</a>
-          </div>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <!--FIM DA NAVEGAÇÃO-->
+    <script src="menu.js" defer></script>
+    <title>Meu Portfólio</title>
+  </head>
 
-  <!--COMEÇO DA MAIN-->
-  <div class="container-main">
-    <div class="flex">
-        <div class="text-container">
-            <h1>TRANSFORMANDO IDEIAS EM <br>REALIDADE DIGITAL.</h1>
-            <h2>Criatividade e inovação lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença online dos seus sonhos.</h2>
-            <div class="container-button">
-                <a href="https://wa.me/5519981263730" target="_blank">Entre em contato</a>
+  <body>
+    <header>
+      <!--COMEÇO DA NAVEGAÇÃO-->
+      <nav>
+        <div>
+          <ul class="nav-menu">
+            <li class="menu"><a href="#top">Início</a></li>
+            <li class="menu"><a href="#stack">Stacks</a></li>
+            <li class="menu"><a href="#sobre">Sobre</a></li>
+            <li class="menu">
+              <a
+                href="https://github.com/MarcosEsquivelAlves?tab=repositories"
+                target="_blank"
+                >Projetos</a
+              >
+            </li>
+            <div class="button">
+              <a href="#contato">Contato</a>
             </div>
+          </ul>
+        </div>
+      </nav>
+
+      <!--COMEÇO DO MOBILE-->
+      <div class="btn-abrir-menu" id="btn-menu">Ξ</div>
+
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">×</div>
+        <nav>
+          <ul>
+            <li class="item-mobile"><a href="#top">Início</a></li>
+            <li class="item-mobile"><a href="#stack">Stacks</a></li>
+            <li class="item-mobile"><a href="#sobre">Sobre</a></li>
+            <li class="item-mobile">
+              <a
+                href="https://github.com/MarcosEsquivelAlves?tab=repositories"
+                target="_blank"
+                >Projetos</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="overlay-menu" id="overlay-menu"></div>
+
+      <!--FIM DO MOBILE-->
+    </header>
+    <!--FIM DA NAVEGAÇÃO-->
+
+    <!--COMEÇO DA MAIN-->
+    <div class="container-main">
+      <div class="flex">
+        <div class="text-container">
+          <h1>TRANSFORMANDO IDEIAS EM <br />REALIDADE DIGITAL.</h1>
+          <h2>
+            Criatividade e inovação lado a lado. Com uma combinação única de
+            design impactante, funcionalidade intuitiva e otimização para
+            resultados, estou pronto para criar a presença online dos seus
+            sonhos.
+          </h2>
+          <div class="container-button">
+            <a href="https://wa.me/5519981263730" target="_blank"
+              >Entre em contato</a
+            >
+          </div>
         </div>
         <div class="container-imagem">
-            <img src="imagens/fotoperfil.png" alt="Minha Imagem">
+          <img src="imagens/fotoperfil.png" alt="Minha Imagem" />
         </div>
-    </div>
-  </div>
-  <!--FIM DA MAIN-->
-
-  <!--COMEÇO DO STACK-->
-  <div id="stack" class="container-stack">
-    <h1 id="stack">
-      STACK DE <span>DESENVOLVIMENTO.</span> 
-    </h1>
-    <!--COMEÇO DOS CARDS-->
-    <div class="container-conteudo">
-      <div class="container-csharp">
-        <img src="imagens/csharp.png" alt="Imagem Csharp">
-        <p>Tenho conhecimento em C#, incluindo desenvolvimento de aplicações, criação de APIs e implementação de lógica de negócios com a plataforma .NET. Utilizo C# para construir soluções de back-end, otimizar o desempenho e garantir a robustez do software.</p>
-      </div>
-      <div class="container-sql">
-        <img src="imagens/sql.png" alt="Imagem Sql">
-        <p>Tenho experiência em SQL Server, incluindo criação e gerenciamento de tabelas, escrita de consultas SQL, desenvolvimento de stored procedures e otimização de desempenho. Utilizo SQL para garantir a integridade dos dados e implementar estratégias de backup e recuperação.</p>
-      </div>
-      <div class="container-git">
-        <img src="imagens/git.jpeg" alt="Imagem Git">
-        <p>Tenho domínio em Git, utilizando a ferramenta para gerenciar o controle de versão de projetos, criar branches para desenvolvimento de novas funcionalidades, fazer merge de alterações e resolver conflitos. Utilizo Git para manter um histórico detalhado das mudanças no código.</p>
-      </div>
-      <div class="container-vue">
-        <img src="imagens/vue.png" alt="Imagem Vue">
-        <p>Tenho proficiência em Vue.js, incluindo criação de componentes, gerenciamento de estado e desenvolvimento de interfaces interativas. Utilizo Vue.js para construir aplicações web dinâmicas e responsivas, integrando funcionalidades e melhorando a experiência do usuário.</p>
       </div>
     </div>
-  </div>
-  <!--FIM DOS CARDS-->
+    <!--FIM DA MAIN-->
 
-  <!--COMEÇO DO SOBRE MIM-->
-  <section id="sobre" class="sobre">
-    <div class="interface">
-      <div class="flex">
-        <div class="img-sobre">
-          <img src="imagens/marcos.jpeg" alt="Foto Marcos">
+    <!--COMEÇO DO STACK-->
+    <div id="stack" class="container-stack">
+      <h1 id="stack">STACK DE <span>DESENVOLVIMENTO.</span></h1>
+      <!--COMEÇO DOS CARDS-->
+      <div class="container-conteudo">
+        <div class="container-csharp">
+          <img src="imagens/csharp.png" alt="Imagem Csharp" />
+          <p>
+            Tenho conhecimento em C#, incluindo desenvolvimento de aplicações,
+            criação de APIs e implementação de lógica de negócios com a
+            plataforma .NET. Utilizo C# para construir soluções de back-end,
+            otimizar o desempenho e garantir a robustez do software.
+          </p>
         </div>
-        <div class="txt-sobre">
-          <h2>MUITO PRAZER, <span>SOU MARCOS ALVES.</span></h2>
-          <div class="container-p">
-            <p>Sou um desenvolvedor com conhecimento em C#, SQL Server, Git e Vue.js. Com um amplo conhecimento sobre a língua inglesa e com experiência em desenvolvimento de software e controle de versão, Também sou capaz de criar aplicações robustas e gerenciar projetos de forma eficiente. Sou apaixonado por tecnologia e estou sempre em busca de aprimorar minhas habilidades e conhecimentos na área de TI.</p>
-            <p>Estou em busca da minha primeira oportunidade de estágio onde eu consiga aplicar meus conhecimentos. Tenho mais afinidade em desenvolvimento de software, todavia estou aberto a vagas em infraestrutura e suporte.</p>
-            <div class="btn-social">
-              <div class="container-instagram">
-                <a href="https://www.instagram.com/marcz_97/" target="_blank">
-                    <img src="imagens/instagram.jpeg" alt="Imagem do Instagram">
-                </a>
-              </div>              
-              <div class="container-linkedin">
-                <a href="https://www.linkedin.com/in/marcos-alves-aa516927b/" target="_blank">
-                    <img src="imagens/linkedin.jpeg" alt="Imagem do linkedin">
-                </a>
-              </div> 
-              <div class="container-youtube">
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img src="imagens/youtube.jpeg" alt="Imagem do youtube">
-                </a>
-              </div> 
-            </div>                      
+        <div class="container-sql">
+          <img src="imagens/sql.png" alt="Imagem Sql" />
+          <p>
+            Tenho experiência em SQL Server, incluindo criação e gerenciamento
+            de tabelas, escrita de consultas SQL, desenvolvimento de stored
+            procedures e otimização de desempenho. Utilizo SQL para garantir a
+            integridade dos dados e implementar estratégias de backup e
+            recuperação.
+          </p>
+        </div>
+        <div class="container-git">
+          <img src="imagens/git.jpeg" alt="Imagem Git" />
+          <p>
+            Tenho domínio em Git, utilizando a ferramenta para gerenciar o
+            controle de versão de projetos, criar branches para desenvolvimento
+            de novas funcionalidades, fazer merge de alterações e resolver
+            conflitos. Utilizo Git para manter um histórico detalhado das
+            mudanças no código.
+          </p>
+        </div>
+        <div class="container-vue">
+          <img src="imagens/vue.png" alt="Imagem Vue" />
+          <p>
+            Tenho proficiência em Vue.js, incluindo criação de componentes,
+            gerenciamento de estado e desenvolvimento de interfaces interativas.
+            Utilizo Vue.js para construir aplicações web dinâmicas e
+            responsivas, integrando funcionalidades e melhorando a experiência
+            do usuário.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--FIM DOS CARDS-->
+
+    <!--COMEÇO DO SOBRE MIM-->
+    <section id="sobre" class="sobre">
+      <div class="interface">
+        <div class="flex">
+          <div class="img-sobre">
+            <img src="imagens/marcos.jpeg" alt="Foto Marcos" />
+          </div>
+          <div class="txt-sobre">
+            <h2>MUITO PRAZER, <span>SOU MARCOS ALVES.</span></h2>
+            <div class="container-p">
+              <p>
+                Sou um desenvolvedor com conhecimento em C#, SQL Server, Git e
+                Vue.js. Com um amplo conhecimento sobre a língua inglesa e com
+                experiência em desenvolvimento de software e controle de versão,
+                Também sou capaz de criar aplicações robustas e gerenciar
+                projetos de forma eficiente. Sou apaixonado por tecnologia e
+                estou sempre em busca de aprimorar minhas habilidades e
+                conhecimentos na área de TI.
+              </p>
+              <p>
+                Estou em busca da minha primeira oportunidade de estágio onde eu
+                consiga aplicar meus conhecimentos. Tenho mais afinidade em
+                desenvolvimento de software, todavia estou aberto a vagas em
+                infraestrutura e suporte.
+              </p>
+              <div class="btn-social">
+                <div class="container-instagram">
+                  <a href="https://www.instagram.com/marcz_97/" target="_blank">
+                    <img
+                      src="imagens/instagram.jpeg"
+                      alt="Imagem do Instagram"
+                    />
+                  </a>
+                </div>
+                <div class="container-linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/marcos-alves-aa516927b/"
+                    target="_blank"
+                  >
+                    <img src="imagens/linkedin.jpeg" alt="Imagem do linkedin" />
+                  </a>
+                </div>
+                <div class="container-youtube">
+                  <a href="https://www.youtube.com/" target="_blank">
+                    <img src="imagens/youtube.jpeg" alt="Imagem do youtube" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div> 
-    </div> 
-  </section>
-  <!--FIM DO SOBRE MIM-->
-
-  <!--COMEÇO DO FORMS-->
-  <section id="contato" class="formulario">
-    <div class="interface">
-      <div class="container-titulo">
-        <h2 class="titulo">FALE <span>COMIGO.</span></h2>
       </div>
-      <form action="">
-        <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-        <input type="text" name="" id="" placeholder="Seu E-mail:" required>
-        <input type="text" name="" id="" placeholder="Seu celular:">
-        <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
-        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-      </form>
-    </div>
-  </section>
-  <!--FIM DO FORMS-->
+    </section>
+    <!--FIM DO SOBRE MIM-->
 
-  <!--COMEÇO DO FOOTER-->
-  <footer>
-    <div class="container-footer">
-      <div class="footer-back-to-top">
-        <a href="#top">Voltar ao Topo</a>
+    <!--COMEÇO DO FORMS-->
+    <section id="contato" class="formulario">
+      <div class="interface">
+        <div class="container-titulo">
+          <h2 class="titulo">FALE <span>COMIGO.</span></h2>
+        </div>
+        <form action="">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Seu nome completo:"
+            required
+          />
+          <input type="text" name="" id="" placeholder="Seu E-mail:" required />
+          <input type="text" name="" id="" placeholder="Seu celular:" />
+          <textarea
+            name=""
+            id=""
+            placeholder="Sua mensagem:"
+            required
+          ></textarea>
+          <div class="btn-enviar"><input type="submit" value="ENVIAR" /></div>
+        </form>
       </div>
-      <div class="footer-content">
-        <p>Desenvolvido por <span>Marcos Alves.</span></p>
-      </div>
-    </div>
-    <div class="container-email">
-      <p><img src="imagens/email.jpg" alt="Imagem Email"><a href="mailto:gaspaulo_mgoo@hotmail.com">Me mande um email</a></p>
-    </div>
-  </footer>
-  <!--FIM DO FOOTER-->
+    </section>
+    <!--FIM DO FORMS-->
 
-</body>
+    <!--COMEÇO DO FOOTER-->
+    <footer>
+      <div class="container-footer">
+        <div class="footer-back-to-top">
+          <a href="#top">Voltar ao Topo</a>
+        </div>
+        <div class="footer-content">
+          <p>Desenvolvido por <span>Marcos Alves.</span></p>
+        </div>
+      </div>
+      <div class="container-email">
+        <p>
+          <img src="imagens/email.jpg" alt="Imagem Email" /><a
+            href="mailto:gaspaulo_mgoo@hotmail.com"
+            >Me mande um email</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!--FIM DO FOOTER-->
+  </body>
 </html>
